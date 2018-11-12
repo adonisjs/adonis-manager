@@ -1,0 +1,63 @@
+{
+  "name": "adonis-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mrm": "mrm --preset=@adonisjs/mrm-preset",
+    "pretest": "npm run lint",
+    "test": "nyc node japaFile.js",
+    "prepublishOnly": "npm run build",
+    "lint": "tslint --project tsconfig.json",
+    "clean": "del build",
+    "compile": "npm run lint && npm run clean && tsc",
+    "build": "npm run compile",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonisjs/adonis-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adonisjs/adonis-manager/issues"
+  },
+  "homepage": "https://github.com/adonisjs/adonis-manager#readme",
+  "devDependencies": {
+    "@adonisjs/mrm-preset": "^1.0.14",
+    "@types/node": "^10.12.5",
+    "commitizen": "^3.0.4",
+    "coveralls": "^3.0.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "del-cli": "^1.1.0",
+    "japa": "^2.0.6",
+    "mrm": "^1.2.1",
+    "nyc": "^13.1.0",
+    "pkg-ok": "^2.3.1",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.1.6",
+    "yorkie": "^2.0.0"
+  },
+  "nyc": {
+    "exclude": [
+      "test",
+      "japaFile.js"
+    ],
+    "extension": [
+      ".ts"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "gitHooks": {
+    "commit-msg": "node ./node_modules/@adonisjs/mrm-preset/validateCommit/conventional/validate.js"
+  }
+}
