@@ -1,8 +1,13 @@
 {
   "name": "@adonisjs/manager",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The builder (Manager) pattern base implementation uses by Adonis framework",
+  "main": "build/index.js",
+  "files": [
+    "build/index.js",
+    "build/index.d.ts",
+    "LICENSE.md"
+  ],
   "scripts": {
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
     "pretest": "npm run lint",
@@ -20,8 +25,8 @@
     "url": "git+https://github.com/adonisjs/adonis-manager.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "virk",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/adonisjs/adonis-manager/issues"
   },
@@ -59,5 +64,9 @@
   },
   "gitHooks": {
     "commit-msg": "node ./node_modules/@adonisjs/mrm-preset/validateCommit/conventional/validate.js"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
