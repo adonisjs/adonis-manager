@@ -84,7 +84,7 @@ Everyone is welcome to contribute. Please go through the following guides, befor
 
 
 ## Authors & License
-[Harminder Virk](https://github.com/Harminder Virk) and [contributors](https://github.com/adonisjs/adonis-manager/graphs/contributors).
+[Harminder Virk](https://github.com/thetutlage) and [contributors](https://github.com/adonisjs/adonis-manager/graphs/contributors).
 
 MIT License, see the included [MIT](LICENSE.md) file.
 
