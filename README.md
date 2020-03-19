@@ -1,7 +1,7 @@
 # Adonis Manager
 > The build (Manager) pattern base implementation
 
-## Use https://github.com/poppinss/manager instead
+## DEPRECIATED (Use https://github.com/poppinss/manager instead)
 
 [![travis-image]][travis-url]
 [![appveyor-image]][appveyor-url]
